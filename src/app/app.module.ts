@@ -9,6 +9,7 @@ import { CoberturaComponent } from './pages/cobertura/cobertura.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { PromocionesComponent } from './pages/promociones/promociones.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
     CoberturaComponent,
     NosotrosComponent,
     PromocionesComponent,
-    NopagefoundComponent
+    NopagefoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
