@@ -1,0 +1,75 @@
+<nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg"  color-on-scroll="100">
+  <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
+          MOLISAC </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a [routerLink]="'/inicio'" class="nav-link">INICIO</a>              
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="'/nosotros'" class="nav-link">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="'/promociones'" class="nav-link">PROMOCIONES</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="'/cobertura'" class="nav-link">COBERTURA</a>
+            </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/bg3.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto">
+        <div class="brand text-center">
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main main-raised">
+  <div class="container">
+    <div class="section text-center">
+      
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer footer-default" >
+  <div class="container">
+    <nav class="float-left">
+      <ul>
+        <li>
+          <a href="#">
+              Guido Matos
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="copyright float-right">
+        &copy;
+        Hecho por Guido Matos
+    </div>
+  </div>
+</footer>
