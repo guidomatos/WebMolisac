@@ -1,1 +1,16 @@
-<p>login works!</p>
+<div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a [routerLink]="'dashboard'" class="nav-link">DASHBOARD</a>              
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="'slider'" class="nav-link">SLIDER</a>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="'promocion'" class="nav-link">PROMOCION</a>
+        </li>
+    </ul>
+</div>
+
+
+<router-outlet></router-outlet>
