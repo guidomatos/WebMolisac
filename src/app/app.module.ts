@@ -1,15 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Modulos
 import { AppRoutingModule } from './app-routing.module';
+import { AdminModule } from './admin/admin.module';
+import { AuthModule } from './auth/auth.module';
+
 
 import { AppComponent } from './app.component';
+
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { CoberturaComponent } from './pages/cobertura/cobertura.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { PromocionesComponent } from './pages/promociones/promociones.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
-import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +22,13 @@ import { LoginComponent } from './auth/login/login.component';
     CoberturaComponent,
     NosotrosComponent,
     PromocionesComponent,
-    NopagefoundComponent,
-    LoginComponent
+    NopagefoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AdminModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
