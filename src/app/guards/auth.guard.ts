@@ -23,6 +23,7 @@ export class AuthGuard implements CanActivate, CanLoad {
         //     })
         // );
 
+        //return this.router.navigateByUrl('/admin');
         return true;
 
     }
@@ -40,6 +41,7 @@ export class AuthGuard implements CanActivate, CanLoad {
         //     })
         // );
 
+        //return this.router.navigateByUrl('/admin');
         return true;
 
     }

@@ -38,7 +38,12 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 ml-auto mr-auto">
                 <div class="card card-login">
-                    <form class="form" method="" action="" style="min-height: 250px !important;">
+                    <form class="form" style="min-height: 250px !important;"
+                        autocomplete="off"
+                        [formGroup]="loginForm"
+                        (ngSubmit)="login()"
+                        id="loginForm"
+                    >
                         <div class="card-header card-header-primary text-center">
                             <h4 class="card-title">MOLISAC</h4>
                             <!--
@@ -63,7 +68,7 @@
                                 <i class="material-icons">face</i>
                             </span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Usuario">
+                            <input type="text" class="form-control" placeholder="Usuario" formControlName="usuario">
                         </div>
                         <div class="input-group">
                             <div class="input-group-prepend">
@@ -71,11 +76,12 @@
                                 <i class="material-icons">lock_outline</i>
                             </span>
                             </div>
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input type="password" class="form-control" placeholder="Password" formControlName="password">
                         </div>
                         </div>
                         <div class="footer text-center">
-                            <a class="btn btn-primary btn-link btn-wd btn-lg">Ingresar</a>
+                            <!-- <a class="btn btn-primary btn-link btn-wd btn-lg">Ingresar</a> -->
+                            <button class="btn btn-primary btn-link btn-wd btn-lg" type="submit">Ingresar</button>
                         </div>
                     </form>
                 </div>
