@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 // Modulos
-// import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from '../shared/shared.module';
 
 import { AdminComponent } from './admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -23,7 +23,7 @@ import { SliderComponent } from './slider/slider.component';
     ],
     imports: [ 
         CommonModule,
-        // SharedModule,
+        SharedModule,
         RouterModule
     ]
 })
