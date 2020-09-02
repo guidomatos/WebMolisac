@@ -1,59 +1,60 @@
-<nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg"  color-on-scroll="100">
-    <div class="container">
-        <div class="navbar-translate">
-            <a [routerLink]="'/'" class="navbar-brand">MOLISAC</a>
+<div class="body-inner">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a [routerLink]="'/'" class="nav-link">INICIO</a>
-                </li>
-                <li class="nav-item">
-                    <a [routerLink]="'nosotros'" class="nav-link">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                    <a [routerLink]="'promociones'" class="nav-link">PROMOCIONES</a>
-                </li>
-                <li class="nav-item">
-                    <a [routerLink]="'cobertura'" class="nav-link">COBERTURA</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-    <div class="page-header header-filter" data-parallax="true">
+    <!-- Header start -->
+    <header id="header" class="fixed-top header" role="banner">
+        <a class="navbar-brand navbar-bg" href="index.html">
+            <!-- <img class="img-fluid float-right" src="images/logo.png" alt="logo"> -->
+        </a>
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 ml-auto mr-auto">
-                <div class="brand text-center">
-                    
-                    <router-outlet></router-outlet>
-                    
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler ml-auto border-0 rounded-0 text-white" type="button" data-toggle="collapse"
+                    data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
 
-    <footer class="footer footer-default" >
-        <div class="container">
-            <nav class="float-left">
-                <ul>
-                    <li><a href="#">Guido Matos</a></li>
-                </ul>
+                <div class="collapse navbar-collapse text-center" id="navigation">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Home
+                            </a> 
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Company
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Features
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-            <div class="copyright float-right">
-                &copy;
-                Hecho por Guido Matos
-            </div>
         </div>
-    </footer>
+    </header>
+    <!--/ Header end -->
+
+</div>
